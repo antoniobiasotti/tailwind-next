@@ -6,8 +6,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: { 
-        antoniobia: "#A8EB12"
+      colors: {
+        lenitabia: "#A8EB12"
       },
     },
   },

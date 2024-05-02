@@ -6,21 +6,21 @@ export default function Home() {
         <li>Hello Tailwind</li>
         <li>Hello Tailwind</li>
       </ul>
-      <form className="bg-slate-700 flex flex-col justify-center items-center rounded-md">
-        <div className="bg-slate-600 p-5">
-          <div className="block">
+      <form className="bg-slate-500 flex justify-center items-center rounded-md py-4">
+        <div className="border-green-200 rounded-md">
+          <div className="bg-slate-600 p-5 flex flex-col">
             <label>User</label>
             <input className="placeholder: rounded-md"></input>
+            <label>Password</label>
+            <input className="placeholder: rounded-md"></input>
           </div>
-          <label>Password</label>
-          <input className="placeholder: rounded-md"></input>
+          <footer className="bg-slate-700 justify-center">
+            <button disabled className="bg-sky-500 px-4 py-2 rounded-md font-medium mt-4 enabled:hover:bg-sky-600 disabled:opacity-60 disabled:cursor-not-allowed">
+              Sign In  
+            </button>
+            <span>Forgot your password?</span>
+          </footer>
         </div>
-        <footer className="bg-slate-500 justify-center">
-          <button disabled className="bg-sky-500 px-4 py-2 rounded-md font-medium mt-4 enabled:hover:bg-sky-600 disabled:opacity-60 disabled:cursor-not-allowed">
-            Sign In  
-          </button>
-          <span>Forgot your password?</span>
-        </footer>
       </form>    
     </div>
   )
