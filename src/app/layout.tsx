@@ -18,8 +18,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="grid min-h-screen grid-cols-app">
-          <aside className="border-2 border-slate-300">sidebar</aside>
-          <main className="border-2 border-slate-300">{children}</main>
+          <aside className="px-5 py-8 border-r-zinc-200 border-2 border-fuchsia-600">
+            Sidebar
+          </aside>
+          <main className="px-4 pb-12 pt-8 border-2 border-fuchsia-600">
+            {children}
+          </main>
         </div>
       </body>
     </html>
