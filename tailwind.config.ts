@@ -1,16 +1,17 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    "./src/**/*.tsx",
-  ],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {
-      colors: { 
-        antoniobia: "#A8EB12"
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 20rem) 1fr',
+      },
+      colors: {
+        antoniobia: '#A8EB12',
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
