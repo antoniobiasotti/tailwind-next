@@ -2,17 +2,19 @@ import { LogOut } from 'lucide-react'
 
 export function Profile() {
   return (
-    <div className="flex items-center gap-3">
+    <div className="grid items-center gap-3 grid-cols-profile">
       <img
         src="https://github.com/antoniobiasotti.png"
         className="w-10 h-10 rounded-full"
         alt=""
       />
-      <div className="flex flex-col">
+      <div className="flex flex-col truncate">
         <span className="text-sm font-semibold text-zinc-700">
           Antonio Biasotti
         </span>
-        <span className="text-sm text-zinc-500">dev.bia@gmail.com</span>
+        <span className="truncate text-sm text-zinc-500">
+          testeesetsetdev.bia@gmail.com
+        </span>
       </div>
       <button
         type="button"
