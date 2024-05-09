@@ -13,7 +13,7 @@ export function Profile() {
           Antonio Biasotti
         </span>
         <span className="truncate text-sm text-zinc-500">
-          testeesetsetdev.bia@gmail.com
+          dev.bia@gmail.com
         </span>
       </div>
       <button
