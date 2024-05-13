@@ -117,13 +117,23 @@ export default function Home() {
           </div>
 
           <div className="grid gap-3 grid-cols-form pt-5">
-            <label
-              htmlFor="email"
-              className="text-sm font-medium text-zinc-700"
-            >
+            <label htmlFor="bio" className="text-sm font-medium text-zinc-700">
               Bio
               <span className="mt-0.5 text-sm font-normal text-zinc-500 block">
                 Write a short introduction.
+              </span>
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid gap-3 grid-cols-form pt-5">
+            <label
+              htmlFor="projects"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Portfolio projects
+              <span className="mt-0.5 text-sm font-normal text-zinc-500 block">
+                Share a few snippets of your work
               </span>
             </label>
             <div></div>
