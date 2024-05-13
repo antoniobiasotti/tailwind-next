@@ -1,3 +1,5 @@
+import { Mail } from 'lucide-react'
+import * as Input from './components/Input'
 import { SettingsTabs } from './components/SettingsTabs/index'
 
 export default function Home() {
@@ -31,8 +33,47 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <form id="settings" className="mt-6 flex flex-col w-full"></form>
-        form
+        <form
+          id="settings"
+          className="mt-6 flex flex-col w-full gap-5 divide-y divide-zinc-200"
+        >
+          <div className="grid gap-3 grid-cols-form">
+            <label
+              htmlFor="firstName"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Name
+            </label>
+            <div className="grid gap-6 grid-cols-2">
+              <Input.Root>
+                <Input.Control id="firstName" defaultValue="Antonio" />
+              </Input.Root>
+
+              <Input.Root>
+                <Input.Control defaultValue="Bia" />
+              </Input.Root>
+            </div>
+          </div>
+
+          <div className="grid gap-3 grid-cols-form pt-5">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Email address
+            </label>
+            <Input.Root>
+              <Input.Prefix>
+                <Mail className="h-5 w-5 text-zinc-500" />
+              </Input.Prefix>
+              <Input.Control
+                id="email"
+                type="email"
+                defaultValue="dev.antoniobia@gmail.com"
+              />
+            </Input.Root>
+          </div>
+        </form>
       </div>
     </>
   )
