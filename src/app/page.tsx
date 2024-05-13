@@ -95,6 +95,16 @@ export default function Home() {
               <Input.Control id="role" defaultValue="Web Developer" />
             </Input.Root>
           </div>
+
+          <div className="grid gap-3 grid-cols-form pt-5">
+            <label
+              htmlFor="country"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Country
+            </label>
+            <div></div>
+          </div>
         </form>
       </div>
     </>
