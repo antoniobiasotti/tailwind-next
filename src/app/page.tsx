@@ -86,6 +86,15 @@ export default function Home() {
             </label>
             <div></div>
           </div>
+
+          <div className="grid gap-3 grid-cols-form pt-5">
+            <label htmlFor="role" className="text-sm font-medium text-zinc-700">
+              Role
+            </label>
+            <Input.Root>
+              <Input.Control id="role" defaultValue="Web Developer" />
+            </Input.Root>
+          </div>
         </form>
       </div>
     </>
