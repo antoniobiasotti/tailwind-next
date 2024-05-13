@@ -73,6 +73,19 @@ export default function Home() {
               />
             </Input.Root>
           </div>
+
+          <div className="grid gap-3 grid-cols-form pt-5">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Your photo
+              <span className="mt-0.5 text-sm font-normal text-zinc-500 block">
+                This will be displayed on your profile.
+              </span>
+            </label>
+            <div></div>
+          </div>
         </form>
       </div>
     </>
