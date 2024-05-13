@@ -105,6 +105,16 @@ export default function Home() {
             </label>
             <div></div>
           </div>
+
+          <div className="grid gap-3 grid-cols-form pt-5">
+            <label
+              htmlFor="timezone"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Timezone
+            </label>
+            <div></div>
+          </div>
         </form>
       </div>
     </>
