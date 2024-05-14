@@ -76,7 +76,7 @@ export default function Home() {
 
           <div className="grid gap-3 grid-cols-form pt-5">
             <label
-              htmlFor="email"
+              htmlFor="photo"
               className="text-sm font-medium text-zinc-700"
             >
               Your photo
@@ -84,10 +84,18 @@ export default function Home() {
                 This will be displayed on your profile.
               </span>
             </label>
-            <div>
+            <div className="flex items-start gap-5">
               <div className="bg-violet-50 flex size-16 items-center justify-center rounded-full">
                 <User className="size-8 text-violet-500" />
               </div>
+              <label
+                htmlFor="photo"
+                className="flex-1 cursor-pointer flex flex-col items-center gap-3 rounded-lg border border-zinc-300 px-6 py-4 text-center text-zinc-500 shadow-md"
+              >
+                Selecionar arquivo
+              </label>
+
+              <input type="file" className="sr-only" id="photo"></input>
             </div>
           </div>
 
