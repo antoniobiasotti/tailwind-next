@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react'
+import { Mail, User } from 'lucide-react'
 import * as Input from './components/Input'
 import { SettingsTabs } from './components/SettingsTabs/index'
 
@@ -84,7 +84,11 @@ export default function Home() {
                 This will be displayed on your profile.
               </span>
             </label>
-            <div></div>
+            <div>
+              <div className="bg-violet-50 flex size-16 items-center justify-center rounded-full">
+                <User className="size-8 text-violet-500" />
+              </div>
+            </div>
           </div>
 
           <div className="grid gap-3 grid-cols-form pt-5">
